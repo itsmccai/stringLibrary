@@ -13,11 +13,11 @@ int all_letter(char *s)
     char *t = s;
     while(*t != '\0')
     {
-        if(isalpha(*t) != 0)
+        if(!isalpha(*t))
         {
-            return 1;
+            return 0;
         }
         t++;
     }
-    return 0;
+    return 1;
 }

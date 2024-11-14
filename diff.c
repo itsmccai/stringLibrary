@@ -22,5 +22,16 @@ int diff (char *s1, char *s2)
         s2++;
         
     }
+
+    while (*s1 != '\0') 
+    {
+        count++;
+        s1++;
+    }
+    while (*s2 != '\0') 
+    {
+        count++;
+        s2++;
+    }
     return count;
 }
